@@ -1,0 +1,90 @@
+.education-section {
+  padding: 80px 60px;
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+  color: #2c3e50;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 36px;
+    color: #101820;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 80px;
+      height: 4px;
+      background-color: #f2aa4c;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 4px;
+    }
+  }
+
+  .training {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 24px;
+      color: #f2aa4c;
+      margin-bottom: 10px;
+      border-left: 6px solid #f2aa4c;
+      padding-left: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+  }
+
+  .education-details {
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        padding: 15px 20px;
+        margin-bottom: 15px;
+        background-color: #f9f9f9;
+        border-left: 6px solid #f2aa4c;
+        border-radius: 6px;
+        font-size: 16px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      strong {
+        color: #101820;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+
+    .container {
+      padding: 30px;
+    }
+
+    .section-title {
+      font-size: 28px;
+    }
+
+    .training h3 {
+      font-size: 20px;
+    }
+  }
+}

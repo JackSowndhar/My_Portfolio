@@ -1,0 +1,75 @@
+.contact-section {
+  padding: 80px 60px;
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+  color: #2c3e50;
+  font-family: "Segoe UI", sans-serif;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    height: 400px;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+    color: #101820;
+    margin-bottom: 40px;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #f2aa4c;
+      margin: 10px auto 0;
+      border-radius: 4px;
+    }
+  }
+
+  .contact-info {
+    font-size: 16px;
+    line-height: 1.7;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #0077b5;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: #f2aa4c;
+        transition: 0.3s ease;
+      }
+    }
+
+    strong {
+      color: #101820;
+      display: inline-block;
+      min-width: 90px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+
+    .container {
+      padding: 30px;
+    }
+
+    .section-title {
+      font-size: 28px;
+    }
+  }
+}

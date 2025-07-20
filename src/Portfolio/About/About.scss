@@ -1,0 +1,92 @@
+.about-section {
+  padding: 80px 60px;
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+  color: #2c3e50;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+    color: #101820;
+    margin-bottom: 50px;
+    font-weight: 700;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: #f2aa4c;
+      margin: 10px auto 0;
+      border-radius: 4px;
+    }
+  }
+
+  .career-objective,
+  .skills {
+    margin-bottom: 40px;
+
+    h3 {
+      font-size: 24px;
+      color: #f2aa4c;
+      margin-bottom: 15px;
+      font-weight: 600;
+      border-left: 6px solid #f2aa4c;
+      padding-left: 12px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 25px;
+      margin-top: 10px;
+
+      li {
+        margin-bottom: 12px;
+        position: relative;
+        padding-left: 18px;
+
+        &::before {
+          content: "✔";
+          position: absolute;
+          left: 0;
+          color: #f2aa4c;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 50px 20px;
+
+    .container {
+      padding: 30px 25px;
+    }
+
+    .section-title {
+      font-size: 28px;
+    }
+
+    .career-objective h3,
+    .skills h3 {
+      font-size: 20px;
+    }
+  }
+}
