@@ -1,0 +1,71 @@
+.footer {
+  background-color: #101820;
+  color: #ffffff;
+  padding: 30px 40px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .footer-links {
+    margin-bottom: 10px;
+
+    a {
+      margin: 0 12px;
+      color: #f2aa4c;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    color: #cccccc;
+    line-height: 1.6;
+
+    p {
+      margin: 5px 0;
+
+      &:first-of-type {
+        font-weight: 500;
+        color: #f2aa4c;
+      }
+    }
+    .Fname {
+      transition: all 0.3s ease;
+      cursor: pointer;
+      padding-left: 5px;
+
+      &:hover {
+        color: #f2aa4c;
+        text-shadow: 0 1px 8px #f2aa4c;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin: 6px 0;
+      }
+    }
+  }
+}

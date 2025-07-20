@@ -1,0 +1,44 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  @include center;
+  gap: 50px;
+  justify-content: space-between;
+  background-color: #101820;
+  color: white;
+  padding: 10px;
+  height: 100px;
+  .name {
+    h1 {
+      margin: 20px;
+      font-size: 35px;
+      font-weight: 600;
+      cursor: default;
+      text-align: start;
+    }
+  }
+  .name h1:hover {
+    color: #f2aa4c;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0.2px 15px #f2aa4c;
+  }
+  .links {
+    @include center;
+    margin: 20px;
+    a {
+      padding: 25px;
+      text-decoration: none;
+      color: #f2aa4c;
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  .links a:hover {
+    color: aliceblue;
+    text-decoration: underline;
+  }
+}
