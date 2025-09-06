@@ -1,2 +1,2 @@
 # Preview
-- [My Portfolio](https://sowndhar-portfolio.netlify.app/) 
+- [Click to view My Portfolio](https://sowndhar-portfolio.netlify.app/) 
